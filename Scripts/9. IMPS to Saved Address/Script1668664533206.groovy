@@ -30,10 +30,11 @@ def checkVPAPresent() {
 	int startY=height/2;
 	int endX=startX;
 	int endY=startY*0.3;
-	Mobile.swipe(height/2, width/2, 2, 2)
+	Mobile.swipe(startX, startY, endX, endY)
 	isVPAPresent=Mobile.verifyElementExist(findTestObject('Object Repository/IMPS to Saved VPA/Find TextView 8076595767ikwik')   , 0)
 	if(isVPAPresent)
 	{
+		Mobile.tap(  findTestObject('Object Repository/IMPS to Saved VPA/Find TextView 8076595767ikwik')     ,0)
 		Mobile.setText( findTestObject('Object Repository/IMPS Wallet 2 UPI ID/5. Edit Amount') , "200", 0)
 		Mobile.delay(3)
 		Mobile.tap( findTestObject('Object Repository/IMPS Wallet 2 UPI ID/6.Done Amount')  ,0 )
@@ -53,9 +54,9 @@ Mobile.tap( findTestObject('Object Repository/IMPS Wallet 2 Acc No OR/1.Wallet t
 checkVPAPresent()
 
 
-Mobile.tap(  findTestObject('Object Repository/IMPS Wallet 2 UPI ID/3.UPI ID'),0)
-Mobile.setText(  findTestObject('Object Repository/IMPS Wallet 2 UPI ID/4. Edit UPI ID'), "9910757211@ikwik", 0)
-Mobile.tap( findTestObject('Object Repository/IMPS Wallet 2 UPI ID/Continue') ,0)
+//Mobile.tap(  findTestObject('Object Repository/IMPS Wallet 2 UPI ID/3.UPI ID'),0)
+//Mobile.setText(  findTestObject('Object Repository/IMPS Wallet 2 UPI ID/4. Edit UPI ID'), "9910757211@ikwik", 0)
+//Mobile.tap( findTestObject('Object Repository/IMPS Wallet 2 UPI ID/Continue') ,0)
 
 
 driver.terminateApp('com.mobikwik_new')

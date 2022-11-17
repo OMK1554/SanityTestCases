@@ -36,7 +36,7 @@ Mobile.tap(  findTestObject('Object Repository/PayRent/Number 0') ,0)
 
 Mobile.tap(  findTestObject('Object Repository/PayRent/6. Continue') ,0)
 
-Mobile.tap(  findTestObject('Object Repository/PayRent/7. Confirm Pay') ,0)
+//Mobile.tap(  findTestObject('Object Repository/PayRent/7. Confirm Pay') ,0)
 
 //closing the app
 AppiumDriver<?> driver = MobileDriverFactory.getDriver();

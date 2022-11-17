@@ -68,11 +68,11 @@ def makePayment() {
 //script starts from here
 	
 Mobile.startExistingApplication('com.mobikwik_new')
-CustomKeywords.'template.appFunctions.goToHome'()
+CustomKeywords.'template.appFunctions.gotoHome'()
 Mobile.tap( findTestObject('Object Repository/Prepaid Recharge/1.Recharge  Pay Bills')    , 0)
 Mobile.tap( findTestObject('Object Repository/Prepaid Recharge/2.Mobile')   ,0)
 Mobile.tap( findTestObject('Object Repository/Prepaid Recharge/3.Enter name or Mobile no')  , 0)
-Mobile.setText(  findTestObject('Object Repository/Prepaid Recharge/4. Search your contact')   , "7795709569", 0)
+Mobile.setText(  findTestObject('Object Repository/Prepaid Recharge/4. Search your contact')   , "9555746475", 0)
 Mobile.tap( findTestObject('Object Repository/Prepaid Recharge/5.Select Number')  ,0)
 Mobile.tap(  findTestObject('Object Repository/Prepaid Recharge/6. Search ICON')  ,0)
 Mobile.setText( findTestObject('Object Repository/Prepaid Recharge/7. Search Plan or Amount')  , "10", 0)

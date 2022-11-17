@@ -23,33 +23,32 @@ import groovy.json.JsonOutput
 import internal.GlobalVariable
 
 public class appFunctions {
-	
+
 	@Keyword
 	def fetchOTP(){
 		Mobile.delay(10)
 		def response = WS.sendRequest(findTestObject('OTPRequest'))
 		def responseText = response.getResponseText()
 		println JsonOutput.prettyPrint(responseText)
-		
-		
+
+
 		JsonSlurper slurper = new JsonSlurper()
 		Map parsedJson = slurper.parseText(responseText)
-		
+
 		def OTP= parsedJson.otp;
 		println OTP
 		return OTP
-		
 	}
-	
+
 	@Keyword
 	def checkScanCard() {
 		boolean isPresent=false;
 		isPresent= Mobile.verifyElementExist( findTestObject('Object Repository/Prepaid Recharge/11.Check Scan a new card') , 0, FailureHandling.STOP_ON_FAILURE)
 		if(isPresent)
-		Mobile.pressBack();
+			Mobile.pressBack();
 	}
-	
-	
+
+
 	@Keyword
 	def gotoHome() {
 		boolean onHome=false;
