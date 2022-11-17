@@ -1,0 +1,31 @@
+{
+  "keywordFileContentHash": "F3367105C5A8DC6754C666712155C253",
+  "keywordClasses": [
+    {
+      "name": "template.appFunctions",
+      "keywordMethods": [
+        {
+          "name": "fetchOTP",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "checkScanCard",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "gotoHome",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "checkZipBenefits",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

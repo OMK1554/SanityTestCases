@@ -1,0 +1,19 @@
+{
+  "keywordFileContentHash": "E59859ECEF3420B1F8169F911A74F146",
+  "keywordClasses": [
+    {
+      "name": "appFunctions.appFunctions",
+      "keywordMethods": [
+        {
+          "name": "goToHome",
+          "parameters": []
+        },
+        {
+          "name": "checkZipBenefits",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}
